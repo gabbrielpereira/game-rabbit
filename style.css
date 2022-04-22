@@ -1,0 +1,72 @@
+body{
+    background: #fafafa;
+
+}
+
+.rabbit{
+    height: 50px;
+    width: 50px;
+    background-image: url(./imgs/coelho.png);
+    position: absolute;
+    bottom:0;
+}
+
+.placar{
+    position: absolute;
+    top:0 ;
+    color: #666666;
+    font-family: arial;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+.hats{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    background-image: url(./imgs/cartola.png);
+}
+
+.game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.game-over h1{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+.game-over img{
+    height: 10%;
+    width: 10%;
+}
+
+@keyframes slideright{
+    from{
+        background-position: 7000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-image: url(./imgs/circo.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 200%;
+    height: 400px;
+}
+
